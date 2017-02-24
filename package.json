@@ -1,0 +1,22 @@
+{
+  "name": "fcc-timestamp-microservice",
+  "version": "1.0.0",
+  "description": "FCC API projects: Timestamp Microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoatran1403/fcc-timestamp-microservice.git"
+  },
+  "author": "Tran Huu Hoa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoatran1403/fcc-timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/hoatran1403/fcc-timestamp-microservice#readme",
+  "devDependencies": {
+    "express": "^4.14.1"
+  }
+}
