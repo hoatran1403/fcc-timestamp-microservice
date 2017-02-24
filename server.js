@@ -1,10 +1,29 @@
-var express = require('express');
-var app = express();
+    var express = require('express');
+    var app = express();
+    "use strict";
 
-app.get('/', function (req, res){
-    res.send('Hello World');
-})
+    app.get('/:date', function (req, res){
+        //decode URI
+        var param = decodeURIComponent(req.params.date);
 
-app.listen(3000, function(){
-    console.log('Server is listening on port 3000!');
-})
+        var unixTime, naturalTime;
+        
+        if(isNaN(param)){
+            unixTime = new Date(param).getTime()/1000;
+            naturalTime = param;
+        }else {
+            console.log(new Date(Number(param)));
+            unixTime = param;
+            naturalTime = new Date(Number(param));
+        }
+
+        var result = {
+            unix: unixTime,
+            natural: naturalTime
+        }
+        res.send(JSON.stringify(result));
+    })
+
+    app.listen(3000, function(){
+        console.log('Server is listening on port 3000!');
+    })
