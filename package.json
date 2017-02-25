@@ -17,6 +17,9 @@
     "url": "https://github.com/hoatran1403/fcc-timestamp-microservice/issues"
   },
   "homepage": "https://github.com/hoatran1403/fcc-timestamp-microservice#readme",
+  "engines": {
+    "node": "6.9.1"
+  },
   "dependencies": {
     "express": "^4.14.1"
   }
