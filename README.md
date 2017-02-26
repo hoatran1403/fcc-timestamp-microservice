@@ -3,7 +3,9 @@ Timestamp Microservice: FCC API Projects
 
 Service is available to call:
 
-With format https://hoath-fcc-timestamp.herokuapp.com/[time]
+With format 
+
+`https://hoath-fcc-timestamp.herokuapp.com/[time]`
 
 Linux time example:
 
